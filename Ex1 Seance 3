@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>Exercice 1 de la séance 3</h1>
-    <p>Une ligne de temps fait avec Wikidata Query Service.</p>
-    <iframe style="width: 80vw; height: 50vh; border: none;" src="https://query.wikidata.org/embed.html#SELECT%20%3FPologne%20%3FPologneLabel%20%3Fstyle_architectural%20%3Fstyle_architecturalLabel%20WHERE%20%7B%0A%20%20SERVICE%20wikibase%3Alabel%20%7B%20bd%3AserviceParam%20wikibase%3Alanguage%20%22%5BAUTO_LANGUAGE%5D%2Cen%22.%20%7D%0A%20%20%3FPologne%20wdt%3AP17%20wd%3AQ36.%0A%20%20OPTIONAL%20%7B%20%3FPologne%20wdt%3AP149%20%3Fstyle_architectural.%20%7D%0A%7D%0ALIMIT%20100" referrerpolicy="origin" sandbox="allow-scripts allow-same-origin allow-popups"></iframe>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <h1>Exercice 1 de la séance 3</h1>
+        <p>Une ligne de temps fait avec Wikidata Query Service.</p>
+        <iframe style="width: 80vw; height: 50vh; border: none;" src="https://query.wikidata.org/embed.html#SELECT%20%3Fstyle_architectural%20%3Fstyle_architecturalLabel%20%3Fimage%20%3Flieu%20%3FlieuLabel%20WHERE%20%7B%0A%20%20SERVICE%20wikibase%3Alabel%20%7B%20bd%3AserviceParam%20wikibase%3Alanguage%20%22%5BAUTO_LANGUAGE%5D%2Cen%22.%20%7D%0A%20%20%3Fstyle_architectural%20wdt%3AP31%20wd%3AQ32880.%0A%20%20%3Fstyle_architectural%20wdt%3AP17%20wd%3AQ36.%0A%20%20OPTIONAL%20%7B%20%3Fstyle_architectural%20wdt%3AP18%20%3Fimage.%20%7D%0A%20%20OPTIONAL%20%7B%20%3Fstyle_architectural%20wdt%3AP276%20%3Flieu.%20%7D%0A%7D%0ALIMIT%20100" referrerpolicy="origin" sandbox="allow-scripts allow-same-origin allow-popups"></iframe>
+    </body>
 </html>
